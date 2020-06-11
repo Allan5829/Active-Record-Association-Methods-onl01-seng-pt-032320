@@ -15,7 +15,7 @@ class Song < ActiveRecord::Base
       songs.first.artist = drake
     else
       drake = Artist.create(name: "Drake")
-      kiki.artist = drake
+      songs.first.artist = drake
     end
   end
 end
